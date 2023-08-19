@@ -11,9 +11,7 @@
         display: flex;
         flex-wrap: wrap;
     }
-    #container div {
-        
-    }
+
     #header{
         flex-basis: 100%;
         flex-grow: 0;
@@ -26,10 +24,14 @@
     .content-1{
         flex-basis: 100%;
         text-align: center;
+        
+    }
+    #info{
+        margin: 10px;
+        po
     }
     #info .content-3 , .content-2{
-        flex-basis: 100%;
-        border-bottom: 2px solid black;
+        border-top: 0.5px solid black;
         margin: 10px;
     }
 
@@ -39,24 +41,25 @@
 <body>
     <div id="container">
         <div id="header">
-            Printer-friendly standard Portfolio, any HTML tags with web-only CSS class will be hidden on print.
-
+            Currently Developing a Printer-friendly standard Portfolio, any HTML tags with web-only CSS class will be hidden on print.
             You can click at any sections or lines hide some information before printing.</div>
         <div class="content-1">
             <h1>Suteemon Vararatsamenitikul</h1>
             <p>(Team)</p>
         </div>
         <div id="info">
+            <h2>Education</h2>
             <div class="content-2">
-                <h2>Education</h2>
                 <ul>
-                    <li>Ekkamai International School 2010-2021</li>
-                    <li>Newton Sixth Form 2021-2024</li>
+                    <li>Ekkamai International School <i>2010-2021</i></li>
+                    <li>Newton Sixth Form 2021-Current</li>
                 </ul>
             </div>
+            <h2>Technologies and languages</h2>
             <div class="content-3">
-                <h2>Technologies and languages</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nesciunt fuga, vitae sunt quibusdam dolor amet tempora itaque eligendi, a maiores quo eum porro praesentium voluptatem ex repellendus recusandae voluptate.</p>
+                <ul>
+                    <li>Currently Learning: JavaScript, React</li>
+                </ul>
             </div>         
         </div>
         <div class="table"></div>
