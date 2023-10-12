@@ -44,8 +44,8 @@ a {
   position: relative;
   bottom: 50px;
   flex-basis: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #info .content {
   border-top: 0.5px solid black;
