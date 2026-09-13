@@ -26,9 +26,15 @@
 
 <div class="flex flex-wrap flex-row gap-x-4 text-sm sm:text-base">
 	<div class="flex-1 basis-[45%] sm:basis-0 text-left sm:py-4 sm:w-48 break-words">
-		<p><a href={`tel:${phone}`}>{phone}</a></p>
-		<p><a href={`mailto:${email}`}>{email}</a></p>
-		<p>{location}</p>
+		{#if phone}
+			<p><a href={`tel:${phone}`}>{phone}</a></p>
+		{/if}
+		{#if email}
+			<p><a href={`mailto:${email}`}>{email}</a></p>
+		{/if}
+		{#if location}
+			<p>{location}</p>
+		{/if}
 	</div>
 
 	<h2
@@ -44,17 +50,24 @@
 	<div
 		class="flex-1 basis-[45%] sm:basis-0 text-right sm:py-4 sm:w-48 text-sm sm:text-base break-words print:text-right"
 	>
-		<p>
-			<a href={`https://github.com/${github}`} target="_blank" rel="noreferrer"
-				>github.com/{github}</a
-			>
-		</p>
-		<p>
-			<a href={`https://${website}`} target="_blank" rel="noreferrer">{website}</a>
-		</p>
-		<p>
-			<a href={`https://linkedin.com/in/${linkedin}`} target="_blank" rel="noreferrer">Linkedin</a>
-		</p>
+		{#if github}
+			<p>
+				<a href={`https://github.com/${github}`} target="_blank" rel="noreferrer"
+					>github.com/{github}</a
+				>
+			</p>
+		{/if}
+		{#if website}
+			<p>
+				<a href={`https://${website}`} target="_blank" rel="noreferrer">{website}</a>
+			</p>
+		{/if}
+		{#if linkedin}
+			<p>
+				<a href={`https://linkedin.com/in/${linkedin}`} target="_blank" rel="noreferrer">Linkedin</a
+				>
+			</p>
+		{/if}
 	</div>
 </div>
 

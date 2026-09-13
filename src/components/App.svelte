@@ -2,7 +2,6 @@
 	import type { IProfileResp } from '../types';
 	import Hideable from './Hideable.svelte';
 	import Intro from './Intro.svelte';
-	import Kofi from './Kofi.svelte';
 	import Work from './Work.svelte';
 
 	let { profile }: { profile: IProfileResp } = $props();
@@ -13,6 +12,7 @@
 		technologies = [],
 		workExperiences = [],
 		educations = [],
+		extracurriculars = [],
 		interests = [],
 		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {}
 	} = $derived(profile || {});
@@ -21,11 +21,6 @@
 	// never becomes a bogus relative URL.
 	const dataLink = $derived(sourceLink ? `${sourceLink}/blob/main/static/data/profile.json` : '');
 </script>
-
-<!-- Remove this is you does not want Kofi widget on your site -->
-{#if intro.github == 'narze'}
-	<Kofi name={intro.github} />
-{/if}
 
 <header class="web-only text-center px-4 py-3 sm:p-6 bg-green-400 text-white w-full">
 	<h1 class="text-2xl sm:text-4xl">Resumette</h1>
@@ -113,6 +108,28 @@
 							<a href="https://{project.url}" target="_blank" rel="noreferrer"
 								><strong>{project.url}</strong></a
 							>
+						</li>
+					</Hideable>
+				{/each}
+			</ul>
+		</Hideable>
+	</section>
+
+	<section>
+		<Hideable>
+			<h2 class="text-xl sm:text-2xl uppercase text-left">Extracurricular Activities</h2>
+			<hr />
+
+			<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 break-words">
+				{#each extracurriculars as activity (activity)}
+					<Hideable>
+						<li>
+							<strong>{activity.section}</strong>
+							<ul class="list-disc pl-5 sm:pl-8 print:pl-6">
+								{#each activity.details as detail (detail)}
+									<li>{detail}</li>
+								{/each}
+							</ul>
 						</li>
 					</Hideable>
 				{/each}

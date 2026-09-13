@@ -4,6 +4,7 @@ export interface IProfileResp {
 	technologies: ITechnology[];
 	workExperiences: IWorkExperience[];
 	educations: IEducation[];
+	extracurriculars?: IExtracurricular[];
 	interests: string[];
 	resumeUrl: {
 		sourceLink: string;
@@ -46,4 +47,9 @@ export interface IWorkExperience {
 export interface IEducation {
 	head: string;
 	details: string;
+}
+
+export interface IExtracurricular {
+	section: string;
+	details: string[];
 }

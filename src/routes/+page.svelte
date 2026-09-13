@@ -6,7 +6,7 @@
 
 	const intro = $derived(data.profile.intro);
 	const pageTitle = $derived(intro.title ? `${intro.name} — ${intro.title}` : intro.name);
-	const description = $derived(intro.summary ?? `Résumé of ${intro.name}`);
+	const description = $derived(intro.summary || `Résumé of ${intro.name}`);
 </script>
 
 <svelte:head>
