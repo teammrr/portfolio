@@ -157,8 +157,10 @@
 	</section>
 
 	<footer class="print-only">
-		(See <a href={fullVersionLink} target="_blank" rel="noopener">full version</a>
-		or <a href={sourceLink} target="_blank" rel="noopener">source</a>)
+		Online version:
+		<a href={fullVersionLink} target="_blank" rel="noopener"
+			>{fullVersionLink.replace(/^https?:\/\//, '')}</a
+		>
 	</footer>
 </main>
 
@@ -192,7 +194,8 @@
 
 	@media print {
 		* {
-			@apply text-xs;
+			font-size: 13px;
+			line-height: 1.4;
 		}
 
 		:global(.print-only) {
@@ -216,7 +219,7 @@
 		}
 
 		section h2 {
-			@apply text-sm;
+			font-size: 15px;
 			break-after: avoid;
 		}
 

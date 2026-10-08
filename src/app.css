@@ -1,2 +1,6 @@
 /* Write your global styles here, in PostCSS syntax */
 @import 'tailwindcss';
+
+@page {
+	margin: 12mm 14mm;
+}
