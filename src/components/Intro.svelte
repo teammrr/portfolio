@@ -24,7 +24,7 @@
 	} = $props();
 </script>
 
-<div class="flex flex-wrap flex-row gap-x-4 text-sm sm:text-base print:text-[12.5px]">
+<div class="flex flex-wrap flex-row gap-x-4 text-sm sm:text-base print:text-[12px]">
 	<div
 		class="flex-1 min-w-0 basis-[45%] sm:basis-0 text-left sm:py-4 print:py-0 sm:w-48 break-words"
 	>
@@ -40,7 +40,7 @@
 	</div>
 
 	<h2
-		class="flex-none basis-full print:basis-full sm:basis-auto order-first sm:order-none print:order-first text-3xl sm:text-2xl md:text-3xl lg:text-6xl text-center px-0 py-2 sm:p-4 print:text-3xl print:pb-1 print:pt-0 break-words"
+		class="flex-none basis-full print:basis-full sm:basis-auto order-first sm:order-none print:order-first text-3xl sm:text-2xl md:text-3xl lg:text-6xl text-center px-0 py-2 sm:p-4 print:text-[28px] print:pb-1 print:pt-0 break-words"
 	>
 		{name}
 		<span class="block -mt-1 text-base lg:text-lg">({nickname})</span>
@@ -50,7 +50,7 @@
 	</h2>
 
 	<div
-		class="flex-1 min-w-0 basis-[45%] sm:basis-0 text-right sm:py-4 print:py-0 sm:w-48 text-sm sm:text-base print:text-[12.5px] break-words print:text-right"
+		class="flex-1 min-w-0 basis-[45%] sm:basis-0 text-right sm:py-4 print:py-0 sm:w-48 text-sm sm:text-base print:text-[12px] break-words print:text-right"
 	>
 		{#if github}
 			<p>
