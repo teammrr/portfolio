@@ -11,6 +11,6 @@ test('résumé content is prerendered without JavaScript', async ({ browser }) =
 	const page = await context.newPage();
 	await page.goto('/');
 	await expect(page.getByRole('heading', { name: /Suteemon Vararatsamenitikul/ })).toBeVisible();
-	await expect(page.getByRole('heading', { name: 'Extracurricular Activities' })).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Achievements & Activities' })).toBeVisible();
 	await context.close();
 });

@@ -98,14 +98,16 @@
 		{
 			"section": "Cybersecurity",
 			"details": [
-				"Found an API vulnerability in my high school's system that exposed student data; reported it responsibly and the school patched it",
-				"8th place, Cisco CTF organized by Thailand's NCSA",
-				"Competitor, Thailand Cyber Top Talent 2022 & 2023"
+				"Discovered and responsibly disclosed an API vulnerability that exposed student records in my high school's system; the school patched it after my report",
+				"Placed 8th in the Cisco CTF hosted by Thailand's National Cyber Security Agency (NCSA)",
+				"Competed in Thailand Cyber Top Talent, a national cybersecurity competition (2022, 2023)"
 			]
 		},
 		{
 			"section": "Athletics",
-			"details": ["Thailand national U18 ice hockey team, IIHF U18 Asia & Oceania Championship"]
+			"details": [
+				"Represented Thailand on the national U18 ice hockey team at the IIHF U18 Asia & Oceania Championship"
+			]
 		}
 	],
 	"interests": ["Custom keyboards (types 120+ WPM), productivity tools, sports, R&B and jazz"],

@@ -119,7 +119,7 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-xl sm:text-2xl uppercase text-left">Extracurricular Activities</h2>
+			<h2 class="text-xl sm:text-2xl uppercase text-left">Achievements &amp; Activities</h2>
 			<hr />
 
 			<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 break-words">
