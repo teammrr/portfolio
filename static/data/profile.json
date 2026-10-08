@@ -43,6 +43,16 @@
 			"hide": true
 		}
 	],
+	"securityResearch": [
+		{
+			"name": "Active Directory attack & detection lab",
+			"details": "Built an isolated Windows Server AD lab and reproduced a full privilege escalation chain from one low-privilege user to domain admin (Kerberoasting → DCSync → Golden Ticket). Wrote four Sigma detection rules and a PowerShell threat-hunting script covering each step"
+		},
+		{
+			"name": "LLM prompt-injection harness",
+			"details": "Python tool that tests whether AI agents can be hijacked by instructions hidden in files. Covers 7 injection techniques, including Thai-language and Base64-encoded payloads, and scores each run automatically with canary callbacks"
+		}
+	],
 	"technologies": [
 		{
 			"section": "Languages:",
@@ -58,7 +68,7 @@
 		},
 		{
 			"section": "Security:",
-			"details": "Burp Suite, Kali Linux, web/API testing, CTFs"
+			"details": "Burp Suite, Impacket, hashcat, Kali Linux, web/API & Active Directory testing, CTFs"
 		},
 		{
 			"section": "Tools & AI:",
@@ -72,7 +82,7 @@
 			"url": "https://github.com/teammrr/srautohaus-admin",
 			"years": ["Jan 2024", "Nov 2024"],
 			"details": [
-				"Built and delivered an internal admin dashboard for a car dealership, from requirements to deployment on Vercel",
+				"Built and shipped an internal admin dashboard for a car dealership, from requirements to deployment",
 				"Implemented secure staff sign-in with NextAuth and a Prisma-backed data layer",
 				"Added sales charts and printable reports so staff could track and share business data without spreadsheets"
 			]

@@ -24,7 +24,7 @@
 	} = $props();
 </script>
 
-<div class="flex flex-wrap flex-row gap-x-4 text-sm sm:text-base print:text-[13px]">
+<div class="flex flex-wrap flex-row gap-x-4 text-sm sm:text-base print:text-[12.5px]">
 	<div
 		class="flex-1 min-w-0 basis-[45%] sm:basis-0 text-left sm:py-4 print:py-0 sm:w-48 break-words"
 	>
@@ -50,7 +50,7 @@
 	</h2>
 
 	<div
-		class="flex-1 min-w-0 basis-[45%] sm:basis-0 text-right sm:py-4 print:py-0 sm:w-48 text-sm sm:text-base print:text-[13px] break-words print:text-right"
+		class="flex-1 min-w-0 basis-[45%] sm:basis-0 text-right sm:py-4 print:py-0 sm:w-48 text-sm sm:text-base print:text-[12.5px] break-words print:text-right"
 	>
 		{#if github}
 			<p>

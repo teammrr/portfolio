@@ -9,6 +9,7 @@
 	const {
 		intro = {} as IProfileResp['intro'],
 		projects = [],
+		securityResearch = [],
 		technologies = [],
 		workExperiences = [],
 		educations = [],
@@ -117,6 +118,26 @@
 		</Hideable>
 	</section>
 
+	{#if securityResearch.length}
+		<section>
+			<Hideable>
+				<h2 class="text-xl sm:text-2xl uppercase text-left">Security Research</h2>
+				<hr />
+
+				<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 break-words">
+					{#each securityResearch as item (item)}
+						<Hideable>
+							<li>
+								<strong>{item.name}</strong>
+								- {item.details}
+							</li>
+						</Hideable>
+					{/each}
+				</ul>
+			</Hideable>
+		</section>
+	{/if}
+
 	<section>
 		<Hideable>
 			<h2 class="text-xl sm:text-2xl uppercase text-left">Achievements &amp; Activities</h2>
@@ -194,8 +215,8 @@
 
 	@media print {
 		* {
-			font-size: 13px;
-			line-height: 1.4;
+			font-size: 12.5px;
+			line-height: 1.35;
 		}
 
 		:global(.print-only) {

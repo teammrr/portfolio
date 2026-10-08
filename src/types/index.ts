@@ -1,6 +1,7 @@
 export interface IProfileResp {
 	intro: IIntro;
 	projects: IProject[];
+	securityResearch?: IResearch[];
 	technologies: ITechnology[];
 	workExperiences: IWorkExperience[];
 	educations: IEducation[];
@@ -29,6 +30,11 @@ export interface IProject {
 	details: string;
 	url: string;
 	hide: boolean;
+}
+
+export interface IResearch {
+	name: string;
+	details: string;
 }
 
 export interface ITechnology {
