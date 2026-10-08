@@ -47,7 +47,24 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-xl sm:text-2xl uppercase text-left">Technologies and Languages</h2>
+			<h2 class="text-xl sm:text-2xl uppercase text-left">Education</h2>
+			<hr />
+
+			<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 break-words">
+				{#each educations as edu (edu)}
+					<Hideable>
+						<li>
+							<strong>{edu.head}</strong>, {edu.details}
+						</li>
+					</Hideable>
+				{/each}
+			</ul>
+		</Hideable>
+	</section>
+
+	<section>
+		<Hideable>
+			<h2 class="text-xl sm:text-2xl uppercase text-left">Skills</h2>
 			<hr />
 			<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 break-words">
 				{#each technologies as tech (tech)}
@@ -66,33 +83,18 @@
 		</Hideable>
 	</section>
 
-	<section>
-		<Hideable>
-			<h2 class="text-xl sm:text-2xl uppercase text-left">Education</h2>
-			<hr />
+	{#if workExperiences.length}
+		<section>
+			<Hideable>
+				<h2 class="text-xl sm:text-2xl uppercase text-left">Work Experience</h2>
+				<hr />
 
-			<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 break-words">
-				{#each educations as edu (edu)}
-					<Hideable>
-						<li>
-							<strong>{edu.head}</strong>, {edu.details}
-						</li>
-					</Hideable>
+				{#each workExperiences as exp (exp)}
+					<Work {...exp} />
 				{/each}
-			</ul>
-		</Hideable>
-	</section>
-
-	<section>
-		<Hideable>
-			<h2 class="text-xl sm:text-2xl uppercase text-left">Work Experience</h2>
-			<hr />
-
-			{#each workExperiences as exp (exp)}
-				<Work {...exp} />
-			{/each}
-		</Hideable>
-	</section>
+			</Hideable>
+		</section>
+	{/if}
 
 	<section>
 		<Hideable>

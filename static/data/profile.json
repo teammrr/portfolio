@@ -2,83 +2,113 @@
 	"intro": {
 		"name": "Suteemon Vararatsamenitikul",
 		"nickname": "Team",
-		"title": "",
+		"title": "Computer Science Student · Full-Stack Web & Security",
 		"summary": "",
-		"phone": "",
-		"email": "",
+		"phone": "089-123-4545",
+		"email": "suteemonv@gmail.com",
 		"github": "teammrr",
-		"linkedin": "",
-		"location": "",
-		"website": ""
+		"linkedin": "suteemon-varaaratsamenitikul-603139157",
+		"location": "Bangkok, Thailand",
+		"website": "teamoo.live"
 	},
 	"projects": [
 		{
-			"name": "TimeTabs",
-			"details": "A class schedule web app built for my high school's student.",
-			"url": "github.com/teammrr/TimeTabs",
+			"name": "AddDropBot",
+			"details": "Watches MUIC course sections during add/drop and sends my university friends a Telegram alert the moment a seat opens. Next.js student app on Vercel, a polling server on a VPS, Supabase, admin dashboard and downtime alerts",
+			"url": "dropaddmuic.teamoo.live",
 			"hide": false
 		},
 		{
 			"name": "Book-It",
-			"details": "A multipurpose room booking web app for students (Demo-Developed). Built with NextJS, Supabase, and NextAuth authentication",
-			"url": "github.com/teammrr/BookIt",
+			"details": "Room reservation system for students with org-only sign-in, live availability, and booking management. Installable as a PWA. Next.js, NextAuth, Prisma",
+			"url": "github.com/teammrr/book-it",
 			"hide": false
 		},
 		{
-			"name": ".Live",
-			"details": "Personal website. Built with Astro, SvelteKit, and TailwindCSS",
-			"url": "github.com/teammrr/live",
+			"name": "TimeTabs",
+			"details": "Redesigned my high school's class timetable into a fast, mobile-friendly web app for students. Astro, Svelte",
+			"url": "github.com/teammrr/timetabs",
 			"hide": false
+		},
+		{
+			"name": "Moodfy",
+			"details": "Generates playlists from a user's mood using the OpenAI API. Next.js, Prisma",
+			"url": "github.com/teammrr/moodfy",
+			"hide": false
+		},
+		{
+			"name": "teamrr.live",
+			"details": "Personal website. Astro, Tailwind CSS",
+			"url": "github.com/teammrr/live",
+			"hide": true
 		}
 	],
 	"technologies": [
 		{
-			"section": "Core languages:",
-			"details": "Typescript, JavaScript, Python, SQL, C, C++"
+			"section": "Languages:",
+			"details": "TypeScript, JavaScript, Python, Java, SQL, C, C++"
 		},
 		{
-			"section": "Front & Back-End:",
-			"details": "Svelte, NextJS, React, Astro, SvelteKit, Tailwind, NodeJS"
+			"section": "Web:",
+			"details": "React, Next.js, Svelte/SvelteKit, Astro, Node.js, Tailwind CSS, Prisma"
 		},
 		{
-			"section": "AI & Agents:",
-			"details": "Claude Code, Codex, Cursor, Agent Skills & Plugins, agentic development workflows"
+			"section": "Cloud & Data:",
+			"details": "Vercel, AWS, Firebase, Supabase"
 		},
 		{
-			"section": "Tools:",
-			"details": "Git, Selenium, Burp Suite, Zsh"
+			"section": "Security:",
+			"details": "Burp Suite, Kali Linux, web/API testing, CTFs"
 		},
 		{
-			"section": "Others:",
-			"details": "Vercel, Firebase, Supabase, AWS, Google App Script, DialogFlow, Linux (Kali, Ubuntu, Arch)"
+			"section": "Tools & AI:",
+			"details": "Git, Linux, Selenium, Claude Code, Cursor, agentic coding workflows"
 		}
 	],
-	"workExperiences": [],
+	"workExperiences": [
+		{
+			"position": "Freelance Full-Stack Developer",
+			"company": "SR Autohaus",
+			"url": "https://github.com/teammrr/srautohaus-admin",
+			"years": ["Jan 2024", "Nov 2024"],
+			"details": [
+				"Built and delivered an internal admin dashboard for a car dealership, from requirements to deployment on Vercel",
+				"Implemented secure staff sign-in with NextAuth and a Prisma-backed data layer",
+				"Added sales charts and printable reports so staff could track and share business data without spreadsheets"
+			]
+		},
+		{
+			"position": "Freelance Software Developer",
+			"company": "VCSHX",
+			"url": "https://github.com/teammrr/VCSHX-HWID",
+			"years": ["Dec 2022", "Jun 2023"],
+			"details": [
+				"Built a Windows desktop app in C# that licenses users by hardware ID (HWID) and checks premium status against the client's API",
+				"Automated the client's website workflow for premium users with Selenium WebDriver"
+			]
+		}
+	],
 	"educations": [
 		{
 			"head": "B.S. Computer Science",
-			"details": "Mahidol University International College (MUIC). 2024-2028"
+			"details": "Mahidol University International College (MUIC), 2024 – 2028 (expected)"
 		}
 	],
 	"extracurriculars": [
 		{
-			"section": "Cyber Security:",
+			"section": "Cybersecurity",
 			"details": [
-				"Discovered and responsibly disclosed an API vulnerability in my high school's system that exposed student information, using Burp Suite; the school fixed it after my report",
-				"CISCO CTF by NCSA (8th place)",
-				"Competed in Thailand Cyber Top Talent 2022-2023"
+				"Found an API vulnerability in my high school's system that exposed student data; reported it responsibly and the school patched it",
+				"8th place, Cisco CTF organized by Thailand's NCSA",
+				"Competitor, Thailand Cyber Top Talent 2022 & 2023"
 			]
 		},
 		{
-			"section": "National U18 Ice Hockey Player:",
-			"details": ["Played in IIHF U18 Ice Hockey Asia and Oceania event"]
+			"section": "Athletics",
+			"details": ["Thailand national U18 ice hockey team, IIHF U18 Asia & Oceania Championship"]
 		}
 	],
-	"interests": [
-		"Areas: Sports, Coding, Productivity, Custom Keyboards, EDC",
-		"Typing: 120+ words per minute",
-		"Music: R&B, Pop, Jazz"
-	],
+	"interests": ["Custom keyboards (types 120+ WPM), productivity tools, sports, R&B and jazz"],
 	"resumeUrl": {
 		"sourceLink": "https://github.com/teammrr/resume",
 		"fullVersionLink": "https://resume.teamoo.live"
